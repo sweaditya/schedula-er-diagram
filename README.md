@@ -82,3 +82,8 @@ I have explained the ER diagram in detail using a Loom video:
 
 👉 Watch here:
 https://www.loom.com/share/cc88931b597c42fdbf005c9a84ffd712
+
+
+
+## Author
+Aditya Sharma
