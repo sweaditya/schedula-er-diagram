@@ -9,109 +9,76 @@ Doctor details and specialization
 
 Clinic details
 
-Appointments
+Appointments and booking status
 
-Booking status and relationships between all entities
+📊 ER Diagram
+
+Below is the ER diagram illustrating entities, attributes, and relationships:
+
+Note: The diagram shows how Patient, Doctor, Clinic, Appointment, and Booking entities are connected.
 
 🧩 Entities & Attributes
-1️⃣ Patient
+Patient
 
-Represents users who book appointments.
+patient_id (Primary Key)
 
-Attributes:
+name
 
-Patient_ID (Primary Key)
+contact_info
 
-Name
+Doctor
 
-Contact_Info
+doctor_id (Primary Key)
 
-Relationships:
+name
 
-A patient schedules appointments
+specialization
 
-A patient has bookings
+Clinic
 
-2️⃣ Doctor
+clinic_id (Primary Key)
 
-Represents medical professionals.
+name
 
-Attributes:
+location
 
-Doctor_ID (Primary Key)
+Appointment
 
-Name
+appointment_id (Primary Key)
 
-Specialization
+date
 
-Relationships:
+time
 
-A doctor conducts appointments
+Booking
 
-A doctor has bookings
+booking_id (Primary Key)
 
-3️⃣ Clinic
+patient_id (Foreign Key)
 
-Represents healthcare centers where appointments take place.
+doctor_id (Foreign Key)
 
-Attributes:
+clinic_id (Foreign Key)
 
-Clinic_ID (Primary Key)
+appointment_id (Foreign Key)
 
-Name
+status
 
-Location
+🔗 Relationships
 
-Relationships:
+A Patient schedules an Appointment
 
-A clinic is associated with appointments
+A Doctor conducts an Appointment
 
-A clinic has bookings
+A Clinic is associated with Appointments
 
-4️⃣ Appointment
+A Booking links Patient, Doctor, Clinic, and Appointment
 
-Represents a scheduled visit between a patient and a doctor.
+Each Booking has a status (Booked / Cancelled / Completed)
 
-Attributes:
+🎥 ER Diagram Explanation (Video)
 
-Appointment_ID (Primary Key)
+I have explained the ER diagram in detail using a Loom video:
 
-Date
-
-Time
-
-Relationships:
-
-An appointment is scheduled by a patient
-
-An appointment is conducted by a doctor
-
-An appointment is associated with a clinic
-
-An appointment is linked to a booking
-
-5️⃣ Booking
-
-Represents confirmation and status of an appointment.
-
-Attributes:
-
-Booking_ID (Primary Key)
-
-Patient_ID (Foreign Key)
-
-Doctor_ID (Foreign Key)
-
-Clinic_ID (Foreign Key)
-
-Appointment_ID (Foreign Key)
-
-Status (Booked / Cancelled / Completed)
-
-Relationships:
-
-A booking belongs to one patient
-
-A booking belongs to one doctor
-
-A booking belongs to one clinic
+👉 Watch here:
+https://www.loom.com/share/cc88931b597c42fdbf005c9a84ffd712
