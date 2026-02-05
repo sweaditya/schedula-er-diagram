@@ -76,7 +76,7 @@ A Booking links Patient, Doctor, Clinic, and Appointment
 
 Each Booking has a status (Booked / Cancelled / Completed)
 
-🎥 ER Diagram Explanation (Video)
+🎥 ER Diagram Explained in (Video)
 
 I have explained the ER diagram in detail using a Loom video:
 
